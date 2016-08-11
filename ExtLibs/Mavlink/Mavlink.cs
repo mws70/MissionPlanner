@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 
 public partial class MAVLink
 {
-    public const string MAVLINK_BUILD_DATE = "Tue Jul 26 2016";
+    public const string MAVLINK_BUILD_DATE = "Thu Aug 11 2016";
     public const string MAVLINK_WIRE_PROTOCOL_VERSION = "2.0";
     public const int MAVLINK_MAX_PAYLOAD_LEN = 255;
 
@@ -202,6 +202,7 @@ public partial class MAVLink
 		new message_info(218, "GOPRO_SET_REQUEST", 17, 7, 7, typeof( mavlink_gopro_set_request_t )),
 		new message_info(219, "GOPRO_SET_RESPONSE", 162, 2, 2, typeof( mavlink_gopro_set_response_t )),
 		new message_info(226, "RPM", 207, 8, 8, typeof( mavlink_rpm_t )),
+		new message_info(227, "ASH_DATA", 152, 3, 3, typeof( mavlink_ash_data_t )),
 		new message_info(230, "ESTIMATOR_STATUS", 163, 42, 42, typeof( mavlink_estimator_status_t )),
 		new message_info(231, "WIND_COV", 105, 40, 40, typeof( mavlink_wind_cov_t )),
 		new message_info(232, "GPS_INPUT", 151, 63, 63, typeof( mavlink_gps_input_t )),
@@ -486,6 +487,7 @@ GOPRO_GET_RESPONSE = 217,
 GOPRO_SET_REQUEST = 218,
 GOPRO_SET_RESPONSE = 219,
 RPM = 226,
+ASH_DATA = 227,
 ESTIMATOR_STATUS = 230,
 WIND_COV = 231,
 GPS_INPUT = 232,
@@ -3659,6 +3661,19 @@ UAVIONIX_ADSB_TRANSCEIVER_HEALTH_REPORT = 10003,
         public  Single rpm1;
             /// <summary> RPM Sensor2 </summary>
         public  Single rpm2;
+    
+    };
+
+
+    [StructLayout(LayoutKind.Sequential,Pack=1,Size=3)]
+    public struct mavlink_ash_data_t
+    {
+        /// <summary> ash test byte one </summary>
+        public  byte ash_test_byte_1;
+            /// <summary> ash test byte two </summary>
+        public  byte ash_test_byte_2;
+            /// <summary> ash test byte three </summary>
+        public  byte ash_test_byte_3;
     
     };
 
