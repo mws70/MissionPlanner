@@ -2012,6 +2012,16 @@ namespace MissionPlanner
                         freemem = mem.freemem;
                         brklevel = mem.brkval;
                     }
+
+                    mavLinkMessage = MAV.getPacket((uint)MAVLink.MAVLINK_MSG_ID.ASH_DATA);
+                    if (mavLinkMessage != null)
+                    {
+                        var ash = mavLinkMessage.ToStructure<MAVLink.mavlink_ash_data_t>();
+                        ash_test_1 = ash.ash_test_byte_1;
+                        ash_test_2 = ash.ash_test_byte_2;
+                        ash_test_3 = ash.ash_test_byte_3;
+                    }
+
                 }
 
                 try
