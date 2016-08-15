@@ -2456,11 +2456,11 @@ namespace MissionPlanner
 
         public MAVLink.MAV_PROTOCOL_CAPABILITY capabilities { get; set; }
 
-        public byte ash_test_1 { get; set; }
+        public float ash_test_1 { get; set; }
 
-        public byte ash_test_2 { get; set; }
+        public float ash_test_2 { get; set; }
 
-        public byte ash_test_3 { get; set; }
+        public float ash_test_3 { get; set; }
 
     }
 }
