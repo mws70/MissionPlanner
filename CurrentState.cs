@@ -2033,7 +2033,7 @@ namespace MissionPlanner
                         bin_count_13 = ash.binCount13;
                         bin_count_14 = ash.binCount14;
                         bin_count_15 = ash.binCount15;
-                        sampling_period = ash.binCount0;
+                        sampling_period = ash.samplingPeriod;
                         my_PM_1 = ash.myPM1;
                         my_PM_3 = ash.myPM3;
                         my_PM_10 = ash.myPM10;
