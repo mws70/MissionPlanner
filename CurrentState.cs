@@ -2017,9 +2017,28 @@ namespace MissionPlanner
                     if (mavLinkMessage != null)
                     {
                         var ash = mavLinkMessage.ToStructure<MAVLink.mavlink_ash_data_t>();
-                        ash_test_1 = ash.ash_test_byte_1;
-                        ash_test_2 = ash.ash_test_byte_2;
-                        ash_test_3 = ash.ash_test_byte_3;
+                        bin_count_0 = ash.binCount0;
+                        bin_count_1 = ash.binCount1;
+                        bin_count_2 = ash.binCount2;
+                        bin_count_3 = ash.binCount3;
+                        bin_count_4 = ash.binCount4;
+                        bin_count_5 = ash.binCount5;
+                        bin_count_6 = ash.binCount6;
+                        bin_count_7 = ash.binCount7;
+                        bin_count_8 = ash.binCount8;
+                        bin_count_9 = ash.binCount9;
+                        bin_count_10 = ash.binCount10;
+                        bin_count_11 = ash.binCount11;
+                        bin_count_12 = ash.binCount12;
+                        bin_count_13 = ash.binCount13;
+                        bin_count_14 = ash.binCount14;
+                        bin_count_15 = ash.binCount15;
+                        sampling_period = ash.binCount0;
+                        my_PM_1 = ash.myPM1;
+                        my_PM_3 = ash.myPM3;
+                        my_PM_10 = ash.myPM10;
+                        my_PM_17_5 = ash.myPM17_5;
+                        total_conc = ash.totalConc;
                     }
 
                 }
@@ -2456,11 +2475,49 @@ namespace MissionPlanner
 
         public MAVLink.MAV_PROTOCOL_CAPABILITY capabilities { get; set; }
 
-        public float ash_test_1 { get; set; }
+        public float bin_count_0 { get; set; }
 
-        public float ash_test_2 { get; set; }
+        public float bin_count_1 { get; set; }
 
-        public float ash_test_3 { get; set; }
+        public float bin_count_2 { get; set; }
+
+        public float bin_count_3 { get; set; }
+
+        public float bin_count_4 { get; set; }
+
+        public float bin_count_5 { get; set; }
+
+        public float bin_count_6 { get; set; }
+
+        public float bin_count_7 { get; set; }
+
+        public float bin_count_8 { get; set; }
+
+        public float bin_count_9 { get; set; }
+
+        public float bin_count_10 { get; set; }
+
+        public float bin_count_11 { get; set; }
+
+        public float bin_count_12 { get; set; }
+
+        public float bin_count_13 { get; set; }
+
+        public float bin_count_14 { get; set; }
+
+        public float bin_count_15 { get; set; }
+
+        public float sampling_period { get; set; }
+
+        public float my_PM_1 { get; set; }
+
+        public float my_PM_3 { get; set; }
+
+        public float my_PM_10 { get; set; }
+
+        public float my_PM_17_5 { get; set; }
+
+        public float total_conc { get; set; }
 
     }
 }

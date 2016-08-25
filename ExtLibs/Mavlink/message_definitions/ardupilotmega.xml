@@ -1544,9 +1544,28 @@
 
         <message id="227" name="ASH_DATA">
             <description>ash test data</description>
-            <field type="uint8_t" name="ash_test_byte_1">ash test byte one</field>
-            <field type="uint8_t" name="ash_test_byte_2">ash test byte two</field>
-            <field type="uint8_t" name="ash_test_byte_3">ash test byte three</field>
+            <field type="uint16_t" name="binCount0">bin 0 count</field>
+            <field type="uint16_t" name="binCount1">bin 1 count</field>
+            <field type="uint16_t" name="binCount2">bin 2 count</field>
+            <field type="uint16_t" name="binCount3">bin 3 count</field>
+            <field type="uint16_t" name="binCount4">bin 4 count</field>
+            <field type="uint16_t" name="binCount5">bin 5 count</field>
+            <field type="uint16_t" name="binCount6">bin 6 count</field>
+            <field type="uint16_t" name="binCount7">bin 7 count</field>
+            <field type="uint16_t" name="binCount8">bin 8 count</field>
+            <field type="uint16_t" name="binCount9">bin 9 count</field>
+            <field type="uint16_t" name="binCount10">bin 10 count</field>
+            <field type="uint16_t" name="binCount11">bin 11 count</field>
+            <field type="uint16_t" name="binCount12">bin 12 count</field>
+            <field type="uint16_t" name="binCount13">bin 13 count</field>
+            <field type="uint16_t" name="binCount14">bin 14 count</field>
+            <field type="uint16_t" name="binCount15">bin 15 count</field>
+            <field type="float" name="samplingPeriod">OPC sampling period</field>
+            <field type="float" name="myPM1">PM1 concentration</field>
+            <field type="float" name="myPM3">PM3 concentration</field>
+            <field type="float" name="myPM10">PM10 concentration</field>
+            <field type="float" name="myPM17_5">PM17_5 concentration</field>
+            <field type="float" name="totalConc">total concentration</field>
         </message>
       
     </messages>
