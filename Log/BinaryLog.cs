@@ -25,7 +25,7 @@ namespace MissionPlanner.Log
             public uint8_t type;
             public uint8_t length;
             [MarshalAs(UnmanagedType.ByValArray, SizeConst = 4)] public byte[] name;
-            [MarshalAs(UnmanagedType.ByValArray, SizeConst = 16)] public byte[] format;
+            [MarshalAs(UnmanagedType.ByValArray, SizeConst = 24)] public byte[] format;
             [MarshalAs(UnmanagedType.ByValArray, SizeConst = 64)] public byte[] labels;
         }
 
